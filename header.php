@@ -20,8 +20,15 @@
   <body>
 
     <header>
-      <div class="container">
+      <div id="mobile-header" class="container hidden-desktop hidden-tablet visible-mobile">
+        <h3><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h3>
+      </div>
+      <div id="desktop-header" class="container visible-desktop visible-tablet hidden-mobile">
         <h1><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+        <p class="strapline">
+          The homebrew club for brewers of all levels based in and around London.
+          We meet monthly, come and join us.
+        </p>
       </div>
     </header>
 

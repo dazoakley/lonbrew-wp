@@ -23,11 +23,16 @@ body {
   background: url(assets/img/hop.png) no-repeat fixed right bottom;
 }
 
-header div {
+header #desktop-header {
   background-image: url(assets/img/banner.gif);
   text-indent: -9999px;
   height: 133px;
   margin: 0 auto;
+}
+
+header #mobile-header {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 header h1 {
