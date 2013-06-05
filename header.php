@@ -19,25 +19,28 @@
   </head>
   <body>
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
+    <div class="navbar-wrapper">
       <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-              <?php wp_list_pages(array('title_li' => '', 'exclude' => 36)); ?>
-              <?php// wp_nav_menu(array()); ?>
+            <a class="brand" href="<?php echo site_url(); ?>">LAB</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <?php wp_list_pages(array('title_li' => '', 'exclude' => 36)); ?>
+                <?php// wp_nav_menu(array()); ?>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
 
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+      </div> <!-- /.container -->
     </div>
-  </div>
 
-  <div class="container">
+
+    <div class="container">
