@@ -7,7 +7,6 @@
 
       <h2><?php the_title(); ?></h2>
       <?php the_content(); ?>
-      <hr />
 
     <?php endwhile; else: ?>
       <p><?php _e('Sorry, this page does not exist.'); ?></p>

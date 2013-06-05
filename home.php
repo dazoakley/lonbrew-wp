@@ -15,7 +15,6 @@
     <?php endwhile; ?>
 
       <?php bootstrap_pagination(); ?>
-      <hr />
 
     <?php else: ?>
       <p><?php _e('Sorry, there are no posts.'); ?></p>

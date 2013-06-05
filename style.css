@@ -18,10 +18,16 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
 body {
-  padding-top: 10px;
   padding-bottom: 20px;
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
+
+header h1 {
+  margin: 25px 0;
+}
+
+/* Navbar
+-------------------------------------------------------------- */
 
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover,
@@ -38,4 +44,86 @@ body {
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
      -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
+/* Comments
+-------------------------------------------------------------- */
+
+.comments-area article {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  margin: 10px 0;
+}
+
+.comments-area article header {
+  margin: 0 0 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.comments-area article header img {
+  float: left;
+  line-height: 0;
+  border: 1px solid #eee;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+  padding: 5px;
+}
+
+.comments-area article header cite,
+.comments-area article header time {
+  display: block;
+  margin-left: 75px;
+}
+
+.comments-area article header cite {
+  font-style: normal;
+  font-size: large;
+}
+
+.comments-area article header time {
+  color: #5e5e5e;
+}
+
+.comments-area article header cite a:hover {
+  text-decoration: underline;
+}
+
+.comments-area li.bypostauthor cite span {
+  padding: 2px 5px;
+  font-size: 10px;
+  color: #999;
+}
+
+.comments-area .comment-awaiting-moderation {
+  color: red;
+  font-style: italic;
+}
+
+/* Comment Form
+-------------------------------------------------------------- */
+
+#respond {
+  margin-top: 48px;
+  margin-top: 3.428571429rem;
+}
+
+#respond #cancel-comment-reply-link {
+  margin-left: 15px;
+}
+
+#respond form input[type="text"],
+#respond form textarea {
+  width: 100%;
+}
+
+#respond form p.form-allowed-tags {
+  line-height: 2;
+  color: #5e5e5e;
+}
+
+.required {
+  color: red;
 }

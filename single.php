@@ -25,8 +25,6 @@
 
     <?php comments_template(); ?>
 
-    <hr />
-
   <?php endwhile; else: ?>
     <p><?php _e('Sorry, this page does not exist.'); ?></p>
   <?php endif; ?>

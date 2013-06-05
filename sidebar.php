@@ -1,3 +1,5 @@
+<hr class="hidden-desktop" />
+
 <form action="<?php echo home_url( '/' ); ?>" method="get" class="form-stacked">
   <fieldset>
     <div class="clearfix">
