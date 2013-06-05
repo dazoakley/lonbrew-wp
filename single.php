@@ -4,13 +4,28 @@
   <div class="span8">
 
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <h1><?php the_title(); ?></h1>
-    <p><em><?php the_time('l, F jS, Y'); ?></em></p>
+    <h2><?php the_title(); ?></h2>
 
-      <?php the_content(); ?>
+    <?php the_content(); ?>
 
-      <hr>
+    <hr />
+    <p>Posted: <?php the_time('l, F jS, Y'); ?></p>
+    <p>Categories: <?php the_category(", "); ?></p>
+    <p><?php the_tags(); ?></p>
+    <hr />
+
+    <nav class="pagination pagination-centered">
+      <ul>
+        <li><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link' ) . '</span> %title' ); ?></li>
+        <li><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link' ) . '</span>' ); ?></li>
+      </ul>
+    </nav>
+
+    <hr />
+
     <?php comments_template(); ?>
+
+    <hr />
 
   <?php endwhile; else: ?>
     <p><?php _e('Sorry, this page does not exist.'); ?></p>

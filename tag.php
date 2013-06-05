@@ -2,7 +2,9 @@
 
 <div class="row">
   <div class="span8">
-    <h2><?php wp_title("",true); ?></h2>
+    <hr />
+    <h4>Tag Archive: <?php wp_title("",true); ?></h4>
+    <hr />
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -15,7 +17,6 @@
     <?php endwhile; ?>
 
       <?php bootstrap_pagination(); ?>
-      <hr />
 
     <?php else: ?>
       <p><?php _e('Sorry, there are no posts.'); ?></p>

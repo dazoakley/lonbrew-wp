@@ -19,28 +19,33 @@
   </head>
   <body>
 
-    <div class="navbar-wrapper">
+    <header>
       <div class="container">
-        <div class="navbar">
-          <div class="navbar-inner">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+        <h1><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+      </div>
 
-            <a class="brand" href="<?php echo site_url(); ?>">LAB</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <?php wp_list_pages(array('title_li' => '', 'exclude' => 36)); ?>
-                <?php// wp_nav_menu(array()); ?>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div><!-- /.navbar-inner -->
-        </div><!-- /.navbar -->
+      <div class="navbar-wrapper">
+        <div class="container">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-      </div> <!-- /.container -->
-    </div>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <?php wp_list_pages(array('title_li' => '')); ?>
+                  <?php// wp_nav_menu(array()); ?>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div><!-- /.navbar-inner -->
+          </div><!-- /.navbar -->
+
+        </div> <!-- /.container -->
+      </div>
+    </header>
 
 
     <div class="container">
