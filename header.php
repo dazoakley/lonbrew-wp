@@ -23,7 +23,9 @@
       <div class="container">
         <h1><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
       </div>
+    </header>
 
+    <navigation>
       <div class="navbar-wrapper">
         <div class="container">
           <div class="navbar">
@@ -45,7 +47,6 @@
 
         </div> <!-- /.container -->
       </div>
-    </header>
-
+    </navigation>
 
     <div class="container">

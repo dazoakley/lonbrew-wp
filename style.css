@@ -20,6 +20,14 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 body {
   padding-bottom: 20px;
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  background: url(assets/img/hop.png) no-repeat fixed right bottom;
+}
+
+header div {
+  background-image: url(assets/img/banner.gif);
+  text-indent: -9999px;
+  height: 133px;
+  margin: 0 auto;
 }
 
 header h1 {
