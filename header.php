@@ -21,7 +21,7 @@
 
     <div class="navbar-wrapper">
       <div class="container">
-        <div class="navbar navbar-inverse">
+        <div class="navbar">
           <div class="navbar-inner">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
