@@ -1,0 +1,21 @@
+/*
+Theme Name: London Amateur Brewers
+Theme URI: http://hocuspokus.net
+Description: A theme for the London Amateur Brewers (LAB) website.
+Author: Darren Oakley
+Author URI: http://hocuspokus.net
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+@import url('assets/css/bootstrap.min.css');
+@import url('assets/css/bootstrap-responsive.min.css');
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
