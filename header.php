@@ -46,7 +46,6 @@
               <div class="nav-collapse collapse">
                 <ul class="nav">
                   <?php wp_list_pages(array('title_li' => '')); ?>
-                  <?php// wp_nav_menu(array()); ?>
                   <li class="page_item">
                     <a href="/forum">Forum</a>
                   </li>
