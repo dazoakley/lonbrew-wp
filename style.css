@@ -15,7 +15,13 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
 @import url('assets/css/bootstrap.min.css');
 @import url('assets/css/bootstrap-responsive.min.css');
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 @import url('assets/css/lonbrew.css');
+
+/* always show a sidebar - match up with forum. */
+html {
+  height: 101%;
+}
 
 /* Comments
 -------------------------------------------------------------- */
