@@ -32,7 +32,7 @@
       </div>
     </header>
 
-    <navigation>
+    <nav>
       <div class="navbar-wrapper">
         <div class="container">
           <div class="navbar">
@@ -56,6 +56,6 @@
 
         </div> <!-- /.container -->
       </div>
-    </navigation>
+    </nav>
 
     <div class="container">
