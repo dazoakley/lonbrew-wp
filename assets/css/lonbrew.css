@@ -7,15 +7,18 @@ body {
 }
 
 header #desktop-header {
-  background-image: url(../../assets/img/banner.gif);
   text-indent: -9999px;
-  height: 133px;
+  height: 135px;
   margin: 0 auto;
+  background: url(../../assets/img/banner.png) no-repeat;
 }
 
 header #mobile-header {
-  text-align: center;
-  text-transform: uppercase;
+  text-indent: -9999px;
+  height: 45px;
+  width: 276px;
+  background: url(../../assets/img/banner-mobile.png) no-repeat;
+  margin: 4px auto 5px;
 }
 
 header h1 {
