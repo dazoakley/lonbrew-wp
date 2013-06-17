@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="London Amateur Brewers - The homebrew club for brewers of all levels based in and around London. We meet monthly, come and join us." />
 
     <!-- Le styles -->
     <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
