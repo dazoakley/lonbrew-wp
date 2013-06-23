@@ -100,12 +100,16 @@ function twentytwelve_comment( $comment, $args, $depth ) {
 }
 endif;
 
-if ( function_exists('register_sidebar') )
+if ( function_exists('register_sidebar') ) {
   register_sidebar(array(
     'before_widget' => '',
     'after_widget' => '',
     'before_title' => '<h3>',
     'after_title' => '</h3>',
   ));
+}
+
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
 
 ?>

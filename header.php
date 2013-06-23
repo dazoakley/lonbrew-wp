@@ -46,7 +46,18 @@
 
               <div class="nav-collapse collapse">
                 <ul class="nav">
-                  <?php wp_list_pages(array('title_li' => '')); ?>
+                  <?php
+                    // wp_list_pages(array('title_li' => ''));
+                    wp_nav_menu( array(
+                      'menu'       => 'top_menu',
+                      'depth'      => 2,
+                      'container'  => false,
+                      'menu_class' => 'nav',
+                      'fallback_cb' => 'wp_page_menu',
+                      //Process nav menu using our custom nav walker
+                      'walker' => new wp_bootstrap_navwalker())
+                    );
+                  ?>
                   <li class="page_item">
                     <a href="/forum">Forum</a>
                   </li>
