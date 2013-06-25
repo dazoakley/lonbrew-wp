@@ -1,5 +1,13 @@
 /* @override http://local.lonbrew.com/wp-content/themes/lonbrew-wp/assets/css/lonbrew.css */
 
+/* BEGIN Temp fix for bootstrap menu bug (on mobile) - https://github.com/twitter/bootstrap/issues/7968 */
+
+.dropdown-backdrop {
+    position: static;
+}
+
+/* END Temp fix for bootstrap menu bug (on mobile) - https://github.com/twitter/bootstrap/issues/7968 */
+
 body {
   padding-bottom: 20px;
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
