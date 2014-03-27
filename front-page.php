@@ -4,15 +4,13 @@
   <div class="span8">
 
     <?php query_posts('posts_per_page=1&cat=23'); ?>
-    <?php if ( have_posts() ) ?>
+    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
       <div id="featured" class="well">
-        <?php while ( have_posts() ) : the_post(); ?>
-          <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-          <p><?php the_excerpt(); ?></p>
-          <p><a href="<?php the_permalink(); ?>">read more &raquo;</a></p>
-        <?php endwhile; ?>
+        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+        <p><?php the_excerpt(); ?></p>
+        <p><a href="<?php the_permalink(); ?>">read more &raquo;</a></p>
       </div><!-- /.featured -->
-    <?php endif; ?>
+    <?php endwhile; ?>
     <?php wp_reset_query(); ?>
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
