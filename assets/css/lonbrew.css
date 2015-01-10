@@ -15,10 +15,17 @@ body {
 }
 
 header #desktop-header {
-  text-indent: -9999px;
   height: 135px;
   margin: 0 auto;
   background: url(../../assets/img/banner.png) no-repeat;
+}
+
+header #desktop-header-content {
+  text-indent: -9999px;
+}
+
+header #desktop-header #search-box {
+  padding-top: 50px;
 }
 
 header #mobile-header {

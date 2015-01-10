@@ -24,12 +24,19 @@
       <div id="mobile-header" class="container hidden-desktop hidden-tablet visible-mobile">
         <h3><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h3>
       </div>
+
       <div id="desktop-header" class="container visible-desktop visible-tablet hidden-mobile">
-        <h1><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-        <p class="strapline">
-          The homebrew club for brewers of all levels based in and around London.
-          We meet monthly, come and join us.
-        </p>
+        <div id="search-box" class="pull-right visible-desktop visible-tablet hidden-mobile">
+          <?php get_search_form(true); ?>
+        </div>
+
+        <div id="desktop-header-content">
+          <h1><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+          <p class="strapline">
+            The homebrew club for brewers of all levels based in and around London.
+            We meet monthly, come and join us.
+          </p>
+        </div>
       </div>
     </header>
 
@@ -58,8 +65,10 @@
                       'walker' => new wp_bootstrap_navwalker())
                     );
                   ?>
+                </ul>
+                <ul class="nav pull-right">
                   <li class="page_item">
-                    <a href="/forum">Forum</a>
+                    <a href="/forum">Members Forum</a>
                   </li>
                 </ul>
               </div><!--/.nav-collapse -->
