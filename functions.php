@@ -100,7 +100,9 @@ function twentytwelve_comment( $comment, $args, $depth ) {
 }
 endif;
 
-if ( function_exists('register_sidebar') ) {
+function register_my_menu_and_sidebar() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+
   register_sidebar(array(
     'before_widget' => '',
     'after_widget' => '',
@@ -108,6 +110,8 @@ if ( function_exists('register_sidebar') ) {
     'after_title' => '</h3>',
   ));
 }
+
+add_action( 'init', 'register_my_menu_and_sidebar' );
 
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');

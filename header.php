@@ -56,13 +56,13 @@
                   <?php
                     // wp_list_pages(array('title_li' => ''));
                     wp_nav_menu( array(
-                      'menu'       => 'top_menu',
-                      'depth'      => 2,
-                      'container'  => false,
-                      'menu_class' => 'nav',
-                      'fallback_cb' => 'wp_page_menu',
-                      //Process nav menu using our custom nav walker
-                      'walker' => new wp_bootstrap_navwalker())
+                      'menu'           => 'top_menu',
+                      'theme-location' => 'header-menu',
+                      'depth'          => 2,
+                      'container'      => false,
+                      'menu_class'     => 'nav',
+                      'fallback_cb'    => 'wp_page_menu',
+                      'walker'         => new wp_bootstrap_navwalker())
                     );
                   ?>
                 </ul>
