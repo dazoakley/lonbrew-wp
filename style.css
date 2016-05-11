@@ -23,6 +23,11 @@ html {
   height: 101%;
 }
 
+/* LAB competition ads */
+.sidebar-poster {
+  max-width: 300px;
+}
+
 /* Comments
 -------------------------------------------------------------- */
 
