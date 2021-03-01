@@ -66,11 +66,6 @@
                     );
                   ?>
                 </ul>
-                <ul class="nav pull-right">
-                  <li class="page_item">
-                    <a href="/forum">Members Forum</a>
-                  </li>
-                </ul>
               </div><!--/.nav-collapse -->
             </div><!-- /.navbar-inner -->
           </div><!-- /.navbar -->
